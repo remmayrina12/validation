@@ -9,6 +9,6 @@ class Usertask extends Model
 {
     use HasFactory;
 
-    protected $table = 'user_tasks';
+    protected $table = 'usertasks';
     protected $guarded = [];
 }
