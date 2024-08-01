@@ -12,7 +12,8 @@ class UsertaskController extends Controller
      */
     public function index()
     {
-        return Usertask::all();
+        $data['usertasks'] = Usertask::all();
+        return view('index', $data);
     }
 
     /**
