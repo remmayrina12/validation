@@ -40,6 +40,7 @@ class UsertaskController extends Controller
         $UserTask->description     = $request['description'];
         $UserTask->deadline        = $request['deadline'];
         $UserTask->save();
+        
         return back()->with('success','Data saved successfully.');
     }
 
